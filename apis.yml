@@ -1,7 +1,30 @@
 aid: hlabs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hlabs.png
 name: Hlabs
-description: Hlabs is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Hlabs (Harrison Laboratories, Inc., operating as hlaboratories.com) is a
+  US-based, Y Combinator-backed (Winter 2026) manufacturer of plug-and-play
+  robotics components. The company produces a domestically-manufactured,
+  integrated hardware ecosystem for robot builders — including the RB1 main
+  board (powered by Nvidia Jetson), wireless communication modules,
+  field-oriented control (FOC) boards, pancake motors, and actuators. Its stated
+  goal is to eliminate the complexity of sourcing mismatched components from
+  overseas and integrating them, so roboticists can focus on design rather than
+  electronics debugging. Hlabs targets teams building medium-to-large robots such
+  as quadrupeds, humanoids, and robot arms, and serves customers across household
+  robotics, defense, and other robotic platforms. This is a hardware manufacturer
+  with no public developer/API surface at the time of profiling.
 url: https://raw.githubusercontent.com/api-evangelist/hlabs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Robotics
+- Hardware
+- Robots
+- Electronics
+- Actuators
+- Motors
+- Manufacturing
+- Y Combinator
+common:
+- type: DomainSecurity
+  url: security/hlabs-domain-security.yml
+- type: Website
+  url: https://www.hlaboratories.com
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
